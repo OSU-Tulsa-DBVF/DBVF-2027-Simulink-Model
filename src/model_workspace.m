@@ -10,37 +10,38 @@ I_kgm2 = [0.15, 0, 0;
             0, 0, 0.6];
 
 %% propellers
-in_to_m = 0.0254;
-radius_m = 19/2 * in_to_m;
-radial_edges_m = [];
 
 %% motor dynamics
-Ah = 10000;
-
 I_0 = 0.31;
 
-I_max = 22;
+I_max = 100;
 
-J_m = 0.001293;
+J_m = 8.6200e-04 * 1.5;
 
-K_e = 0.00033780566167632186;
+K_e = 0.03080418253;
 
-K_t = 0.00033780566167632186;
+K_t = 0.03080418253;
 
 K_u = 1;
 
 K_v = 310;
 
+n_motors = 4;
+
 %% battery
 n_cells = 6;
+
+eta_ESC = 1;
+
+Ah = 10;
+
+R_batt = 6*10e-4;
 
 %% units and SITL
 
 N_to_mG = 101.97162129779284;
 
 Pa_to_hPa = 0.01;
-
-R_batt = 0.1;
 
 R_m = 0.17;
 
