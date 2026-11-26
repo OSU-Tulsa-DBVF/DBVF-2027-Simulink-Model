@@ -67,7 +67,7 @@ s_to_us = 1.0E+6;
 
 test = 14;
 
-timestep = 0.01;
+timestep = 0.005;
 
 uT_to_gauss = 0.01;
 
